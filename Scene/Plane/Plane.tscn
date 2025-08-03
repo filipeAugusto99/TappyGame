@@ -82,7 +82,7 @@ scale = Vector2(0.75, 0.75)
 sprite_frames = SubResource("SpriteFrames_yvxy0")
 animation = &"fly"
 autoplay = "fly"
-frame_progress = 0.466291
+frame_progress = 0.954374
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
 position = Vector2(-16.1365, 20.3988)
