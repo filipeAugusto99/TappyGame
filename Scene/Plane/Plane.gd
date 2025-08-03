@@ -1,14 +1,12 @@
 extends CharacterBody2D
 
-const JUMP: float = -500.0
+const JUMP: float = -350.0
 
-var _gravity: float = ProjectSettings.get("physics/2d/default_gravity")
-
-func _ready() -> void:
-	pass # Replace with function body.
+var _gravity: float = ProjectSettings.get('physics/2d/default_gravity')
 
 func _physics_process(delta: float) -> void:
-	velocity.y += _gravity * delta
-	
+	velocity.y += delta * _gravity
 	move_and_slide()
 	
+	if Input.is_action_just_pressed('jump') == true and is_on_floor() == false:
+		velocity.y = JUMP
