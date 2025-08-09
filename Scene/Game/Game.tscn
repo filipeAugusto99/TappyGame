@@ -17,7 +17,16 @@ position = Vector2(151, 346)
 
 [node name="Barrier" parent="." instance=ExtResource("3_ssqj0")]
 
-[node name="Timer" type="Timer" parent="."]
+[node name="SpawnTimer" type="Timer" parent="."]
+wait_time = 1.2
 autostart = true
 
-[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[node name="PipesHolder" type="Node" parent="."]
+
+[node name="UpperPoint" type="Marker2D" parent="."]
+position = Vector2(627, 299)
+
+[node name="LowerPoint" type="Marker2D" parent="."]
+position = Vector2(627, 658)
+
+[connection signal="timeout" from="SpawnTimer" to="." method="_on_timer_timeout"]
