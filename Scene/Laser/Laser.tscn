@@ -3,7 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://dfp66i43thnvw" path="res://assets/pipes/laser2.png" id="1_eyvs7"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_hd8eq"]
-size = Vector2(8, 192)
+size = Vector2(7, 307)
 
 [sub_resource type="Animation" id="Animation_eyvs7"]
 resource_name = "flash"
@@ -52,10 +52,10 @@ scale = Vector2(1, 8)
 texture = ExtResource("1_eyvs7")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(60, 2)
+position = Vector2(60.5, -16.5)
 shape = SubResource("RectangleShape2D_hd8eq")
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+[node name="LaserAnimation" type="AnimationPlayer" parent="."]
 libraries = {
 &"": SubResource("AnimationLibrary_uuxh2")
 }
