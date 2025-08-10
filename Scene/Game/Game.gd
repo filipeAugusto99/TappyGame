@@ -5,6 +5,7 @@ const PIPES = preload("res://Scene/Pipes/Pipes.tscn")
 @onready var pipes_holder: Node = $PipesHolder
 @onready var upper_point: Marker2D = $UpperPoint
 @onready var lower_point: Marker2D = $LowerPoint
+@onready var plane: myPlane = $Plane
 
 
 func _ready() -> void:
@@ -29,3 +30,7 @@ func spawn_pipes() -> void:
 	
 func _on_timer_timeout() -> void:
 	spawn_pipes()
+
+
+func _on_plane_died() -> void:
+	get_tree().paused = true

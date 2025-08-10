@@ -24,9 +24,10 @@ autostart = true
 [node name="PipesHolder" type="Node" parent="."]
 
 [node name="UpperPoint" type="Marker2D" parent="."]
-position = Vector2(627, 299)
+position = Vector2(627, 195)
 
 [node name="LowerPoint" type="Marker2D" parent="."]
-position = Vector2(627, 658)
+position = Vector2(627, 583)
 
+[connection signal="on_plane_died" from="Plane" to="." method="_on_plane_died"]
 [connection signal="timeout" from="SpawnTimer" to="." method="_on_timer_timeout"]

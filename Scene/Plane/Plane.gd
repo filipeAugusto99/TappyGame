@@ -1,5 +1,9 @@
 extends CharacterBody2D
 
+class_name myPlane
+
+signal on_plane_died
+
 @onready var animation_player: AnimationPlayer = $AnimationPlayer
 @onready var animated_sprite_2d: AnimatedSprite2D = $AnimatedSprite2D
 
@@ -15,10 +19,10 @@ func _physics_process(delta: float) -> void:
 		die()
 	
 	
-func die() -> void:
-	
+func die() -> void:	
 	set_physics_process(false)
 	animated_sprite_2d.stop()
+	_on_plane_died()
 
 func fly(delta: float) -> void:
 	velocity.y += delta * _gravity
@@ -26,4 +30,6 @@ func fly(delta: float) -> void:
 	if Input.is_action_just_pressed('jump') == true:
 		velocity.y = JUMP
 		animation_player.play('jump')
-		
+
+func _on_plane_died() -> void:
+	on_plane_died.emit()
