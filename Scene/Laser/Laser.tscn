@@ -1,7 +1,6 @@
-[gd_scene load_steps=7 format=3 uid="uid://kiycfle3vwhj"]
+[gd_scene load_steps=6 format=3 uid="uid://kiycfle3vwhj"]
 
 [ext_resource type="Texture2D" uid="uid://dfp66i43thnvw" path="res://assets/pipes/laser2.png" id="1_eyvs7"]
-[ext_resource type="Script" uid="uid://cye7gy8vytgl3" path="res://Scene/Laser/Laser.gd" id="1_hd8eq"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_hd8eq"]
 size = Vector2(7, 307)
@@ -46,7 +45,6 @@ _data = {
 }
 
 [node name="Laser" type="Area2D"]
-script = ExtResource("1_hd8eq")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(1.33333, 2)
@@ -61,3 +59,4 @@ shape = SubResource("RectangleShape2D_hd8eq")
 libraries = {
 &"": SubResource("AnimationLibrary_uuxh2")
 }
+autoplay = "flash"
