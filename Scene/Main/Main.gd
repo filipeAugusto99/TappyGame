@@ -8,4 +8,4 @@ func _unhandled_input(event: InputEvent) -> void:
 		
 		
 func _ready() -> void:
-	pass
+	get_tree().paused = false
