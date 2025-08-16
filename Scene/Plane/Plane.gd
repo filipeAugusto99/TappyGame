@@ -2,7 +2,7 @@ extends CharacterBody2D
 
 class_name myPlane
 
-signal on_plane_died
+#signal on_plane_died
 
 @onready var animation_player: AnimationPlayer = $AnimationPlayer
 @onready var animated_sprite_2d: AnimatedSprite2D = $AnimatedSprite2D
@@ -22,7 +22,7 @@ func _physics_process(delta: float) -> void:
 func die() -> void:	
 	set_physics_process(false)
 	animated_sprite_2d.stop()
-	_on_plane_died()
+	SignalHub.emit_on_plane_died()
 
 func fly(delta: float) -> void:
 	velocity.y += delta * _gravity
@@ -32,4 +32,4 @@ func fly(delta: float) -> void:
 		animation_player.play('jump')
 
 func _on_plane_died() -> void:
-	on_plane_died.emit()
+	SignalHub.emit_on_plane_died()

@@ -9,7 +9,7 @@ func _ready() -> void:
 	pass # Replace with function body.
 
 
-func _process(delta: float) -> void:
+func _physics_process(delta: float) -> void:
 	position.x -= delta * SPEED
 	
 	if position.x < get_viewport_rect().position.x - 100:

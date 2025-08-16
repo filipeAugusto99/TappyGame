@@ -11,9 +11,13 @@ const PIPES = preload("res://Scene/Pipes/Pipes.tscn")
 
 func _ready() -> void:
 	spawn_pipes()
-  
+   
 
-func _process(delta: float) -> void:
+func _enter_tree() -> void:
+	SignalHub.on_plane_died.connect(_on_plane_died)
+
+
+func _process(_delta: float) -> void:
 	pass
 
 	
