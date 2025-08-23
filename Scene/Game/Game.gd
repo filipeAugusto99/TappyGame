@@ -2,8 +2,6 @@ extends Node2D
 
 const PIPES = preload("res://Scene/Pipes/Pipes.tscn")
 
-
-
 @onready var pipes_holder: Node = $PipesHolder
 @onready var upper_point: Marker2D = $UpperPoint
 @onready var lower_point: Marker2D = $LowerPoint
