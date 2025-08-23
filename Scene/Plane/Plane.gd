@@ -19,7 +19,7 @@ func _physics_process(delta: float) -> void:
 		die()
 	
 	
-func die() -> void:	
+func die() -> void:
 	set_physics_process(false)
 	animated_sprite_2d.stop()
 	SignalHub.emit_on_plane_died()
