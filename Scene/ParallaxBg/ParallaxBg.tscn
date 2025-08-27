@@ -16,7 +16,6 @@ texture = ExtResource("1_27unm")
 centered = false
 
 [node name="Parallax2D2" type="Parallax2D" parent="."]
-scale = Vector2(0.79, 0.79)
 repeat_size = Vector2(1920, 0)
 autoscroll = Vector2(-80, 0)
 
@@ -25,7 +24,6 @@ texture = ExtResource("1_6a30d")
 centered = false
 
 [node name="Parallax2D3" type="Parallax2D" parent="."]
-scale = Vector2(0.79, 0.79)
 repeat_size = Vector2(1920, 0)
 autoscroll = Vector2(-20, 0)
 
@@ -34,7 +32,6 @@ texture = ExtResource("3_jyn4n")
 centered = false
 
 [node name="Parallax2D4" type="Parallax2D" parent="."]
-scale = Vector2(0.79, 0.79)
 repeat_size = Vector2(1920, 0)
 autoscroll = Vector2(-30, 0)
 
@@ -43,7 +40,6 @@ texture = ExtResource("4_yfidl")
 centered = false
 
 [node name="Parallax2D5" type="Parallax2D" parent="."]
-scale = Vector2(0.79, 0.79)
 repeat_size = Vector2(1920, 0)
 autoscroll = Vector2(-40, 0)
 
@@ -52,7 +48,6 @@ texture = ExtResource("5_y4q5o")
 centered = false
 
 [node name="Parallax2D6" type="Parallax2D" parent="."]
-scale = Vector2(0.79, 0.79)
 repeat_size = Vector2(1920, 0)
 autoscroll = Vector2(-50, 0)
 
@@ -61,7 +56,6 @@ texture = ExtResource("6_3gud1")
 centered = false
 
 [node name="Parallax2D" type="Parallax2D" parent="."]
-scale = Vector2(0.79, 0.79)
 repeat_size = Vector2(1920, 0)
 autoscroll = Vector2(-120, 0)
 

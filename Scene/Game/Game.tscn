@@ -11,6 +11,7 @@
 script = ExtResource("1_eq4nl")
 
 [node name="ParallaxBg" parent="." instance=ExtResource("2_4osps")]
+scale = Vector2(0.79, 0.79)
 
 [node name="Rocks2" type="Sprite2D" parent="."]
 visible = false
